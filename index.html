@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>LE1337ET</title>
+<meta name="description" content="LE1337ET — it's not clothes, it's style. Футболки, майки, реглани та худі SVARS.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:title" content="LE1337ET — Summer Collection">
+<meta property="og:image" content="img/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Metal+Mania&family=Rubik+Distressed&display=swap" rel="stylesheet">
+<style>
+:root{--t:#292314;--t7:rgba(41,35,20,.7);--t5:rgba(41,35,20,.5);--d:#181713;--f:#121212;--cr:#f5f3ee;--line:#ebe9e4;--soft:#f6f5f2;--pink:#e5679a;--sh:rgba(30,25,20,.24);--lg:'Rubik Distressed','Arial Black',sans-serif;--mt:'Metal Mania','Rubik Distressed',serif;--e:cubic-bezier(.22,.61,.36,1)}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#fff;color:var(--t);font-family:'Montserrat',Arial,sans-serif;font-size:14px;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body.lock{overflow:hidden}
+h1,h2,h3,h4,p{margin:0}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;border-radius:0;padding:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--t);outline-offset:2px}
+[hidden]{display:none!important}
+.g{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:1440px;margin:0 auto}
+.pv{background:var(--soft);color:var(--t5);text-align:center;font-size:11px;padding-block:6px}
+.hdr{position:sticky;top:0;z-index:50;background:#fff;transition:box-shadow .3s}
+.hdr.sc{box-shadow:0 1px 0 var(--line)}
+.hdr .in{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:76px;max-width:1440px;margin:0 auto}
+.nav{display:flex;gap:28px}
+.nav a{color:var(--t7);white-space:nowrap;transition:color .2s}
+.nav a:hover{color:var(--t)}
+.logo{font-family:var(--lg);font-size:28px;line-height:1;letter-spacing:.02em}
+.right{justify-self:end;display:flex;align-items:center;gap:22px}
+.right a{color:var(--t7)}
+.right a:hover{color:var(--t)}
+.cbtn{display:flex;align-items:center;gap:8px}
+.cbtn svg{width:20px;height:20px}
+.cbtn b{min-width:20px;height:20px;border-radius:10px;padding:0 6px;display:grid;place-items:center;background:var(--t);color:#fff;font-size:11px;font-weight:600}
+.cbtn.has b{background:var(--pink)}
+.hero{position:relative;height:min(84vh,760px);min-height:480px;overflow:hidden;background:#0d0d0f}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:52% 45%;animation:kb 22s ease-in-out infinite alternate}
+@keyframes kb{from{transform:scale(1.02)}to{transform:scale(1.12) translateX(1.5%)}}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:#fff;opacity:0;animation:flash 9s 1.2s infinite}
+@keyframes flash{0%,92%,100%{opacity:0}93%{opacity:.5}95%{opacity:0}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.2) 0%,rgba(0,0,0,0) 35%,rgba(0,0,0,.75) 100%)}
+.hcap{position:absolute;left:0;right:0;bottom:56px;z-index:2;display:grid;justify-items:center;gap:14px;text-align:center;color:#fff;padding-inline:16px;animation:rise 1.2s .2s var(--e) both}
+@keyframes rise{from{transform:translateY(24px)}}
+.hcap small{font-size:12px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:rgba(255,255,255,.8)}
+.hcap h1{font-weight:800;font-size:clamp(32px,5.2vw,58px);line-height:1.04;text-transform:uppercase;letter-spacing:.01em}
+.hcap p{font-size:15px;font-weight:500;color:rgba(255,255,255,.85)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:48px;padding:0 30px;background:var(--d);color:#fff;font-size:14px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;transition:background .25s,color .25s}
+.btn:hover{background:var(--pink)}
+.btn.lt{background:#fff;color:var(--t)}
+.btn.lt:hover{background:var(--pink);color:#fff}
+.btn.ol{background:transparent;color:var(--t);box-shadow:inset 0 0 0 1px var(--t)}
+.btn.ol:hover{background:var(--t);color:#fff}
+.full{width:100%}
+.credit{position:absolute;right:12px;bottom:10px;z-index:2;font-size:10px;color:rgba(255,255,255,.55)}
+.credit a{text-decoration:underline}
+.sec{padding-block:72px;scroll-margin-top:76px}
+.sh{display:flex;justify-content:space-between;align-items:baseline;gap:12px 24px;flex-wrap:wrap;margin-bottom:36px}
+.sh h2{font-size:clamp(22px,2.4vw,30px);font-weight:700;text-transform:uppercase;letter-spacing:.02em}
+.tabs{display:flex;gap:22px;flex-wrap:wrap}
+.chip{color:var(--t7);padding-bottom:3px;border-bottom:1px solid transparent;transition:color .2s,border-color .2s}
+.chip:hover{color:var(--t)}
+.chip.on{color:var(--t);border-color:var(--t)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px 12px}
+.card{display:block;text-align:left;min-width:0}
+.ph{position:relative;display:block;aspect-ratio:4/5}
+.ph svg{position:absolute;inset:0;width:100%;height:100%;transition:transform .9s var(--e)}
+.card:hover .ph svg{transform:scale(1.05) translateY(-6px)}
+.new{position:absolute;top:6px;left:0;font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--pink)}
+.meta{display:block;padding-top:6px}
+.nm{display:block;line-height:1.35}
+.pc{display:block;margin-top:4px;font-weight:600;font-variant-numeric:tabular-nums}
+.more{display:flex;justify-content:center;margin-top:56px}
+.lb2{position:relative;min-height:min(70vh,620px);display:grid;place-items:center;overflow:hidden;color:#fff;text-align:center;background:#0d0d0f}
+.lb2 img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 50%;transform:scale(1.3);filter:grayscale(1) contrast(1.1)}
+.lb2::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.6)}
+.lb2 .in{position:relative;z-index:1;display:grid;justify-items:center;gap:14px;padding-block:64px}
+.lb2 h2{font-family:var(--lg);font-weight:400;font-size:clamp(72px,14vw,180px);line-height:.9;letter-spacing:.02em}
+.lb2 h2 span{color:var(--pink)}
+.lb2 p{max-width:44ch;color:rgba(255,255,255,.82);font-size:15px}
+.wf{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:10px}
+.wf input{width:min(100%,300px);height:48px;padding:0 14px;border:0;border-radius:0;background:rgba(255,255,255,.95);font:inherit;font-size:16px;color:var(--t)}
+.wf input:focus{outline:2px solid #fff;outline-offset:2px}
+.about{padding-block:88px;text-align:center}
+.about h2{font-size:clamp(22px,2.4vw,30px);font-weight:700;text-transform:uppercase;letter-spacing:.02em;margin-bottom:18px}
+.about p{max-width:62ch;margin:0 auto;font-size:16px;line-height:1.75;color:var(--t7)}
+.leet{display:flex;justify-content:center;gap:clamp(16px,4vw,48px);margin-top:44px}
+.leet div{display:grid;justify-items:center;gap:2px}
+.leet b{font-family:var(--lg);font-weight:400;font-size:clamp(40px,6vw,72px);line-height:1}
+.leet span{font-size:12px;font-weight:700;letter-spacing:.2em;color:var(--t5)}
+.facts{display:flex;justify-content:center;gap:16px 44px;flex-wrap:wrap;margin-top:44px}
+.facts b{display:block;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+.facts span{font-size:13px;color:var(--t7)}
+.ft{background:var(--f);color:rgba(245,243,238,.6);font-size:12px}
+.ft .in{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px 24px;min-height:71px;padding-block:16px;max-width:1440px;margin:0 auto}
+.ft b{font-family:var(--lg);font-weight:400;font-size:22px;color:var(--cr)}
+.ft nav{display:flex;gap:22px;flex-wrap:wrap}
+.ft a:hover{color:var(--cr)}
+.ov{position:fixed;inset:0;z-index:90;background:rgba(18,18,18,.5);opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s}
+.ov.on{opacity:1;visibility:visible}
+.modal{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:12px;opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s}
+.modal.on{opacity:1;visibility:visible}
+.mp{position:relative;width:100%;max-width:1040px;max-height:calc(100svh - 24px);overflow-y:auto;background:#fff;transform:translateY(24px);transition:transform .4s var(--e)}
+.modal.on .mp{transform:none}
+.x{position:absolute;top:8px;right:8px;z-index:3;width:44px;height:44px;font-size:26px;font-weight:300;line-height:1;background:#fff}
+.x:hover{color:var(--pink)}
+.mb{display:grid}
+.mb>.ph{background:var(--soft)}
+.md{display:flex;flex-direction:column;gap:18px;padding:24px 20px 28px;min-width:0}
+.md h3{font-size:clamp(24px,3vw,32px);font-weight:700;line-height:1.15;text-transform:uppercase;padding-right:44px}
+.mpr{font-size:20px;font-weight:600}
+.ds{color:var(--t7);font-size:15px}
+.lb{font-size:13px;font-weight:600;margin-bottom:10px}
+.sz{display:flex;gap:8px;flex-wrap:wrap}
+.sz button{width:56px;height:46px;font-weight:500;box-shadow:inset 0 0 0 1px var(--line)}
+.sz button:hover{box-shadow:inset 0 0 0 1px var(--t)}
+.sz button.on{background:var(--t);color:#fff;box-shadow:none}
+.err{min-height:20px;margin-top:6px;color:var(--pink);font-size:13px}
+.md details{border-top:1px solid var(--line)}
+.md details:last-of-type{border-bottom:1px solid var(--line)}
+.md summary{display:flex;justify-content:space-between;padding-block:14px;font-weight:600;list-style:none;cursor:pointer}
+.md summary::-webkit-details-marker{display:none}
+.md summary::after{content:"+";font-weight:400;font-size:18px;line-height:1}
+.md details[open] summary::after{content:"−"}
+.md details>div,.md details>p{padding-bottom:16px;color:var(--t7);overflow-x:auto}
+.chart{width:100%;border-collapse:collapse;text-align:center;font-size:13px}
+.chart th,.chart td{border-bottom:1px solid var(--line);padding:8px 4px}
+.chart th:first-child,.chart td:first-child{text-align:left}
+.dmline{font-size:13px;color:var(--t7);text-align:center}
+.dmline a{color:var(--t);text-decoration:underline}
+.dr{position:fixed;top:0;right:0;bottom:0;z-index:100;width:min(440px,100%);display:flex;flex-direction:column;background:#fff;transform:translateX(102%);transition:transform .45s var(--e)}
+.dr.on{transform:none}
+.dh{flex:none;display:flex;align-items:center;justify-content:space-between;height:76px;padding:0 12px 0 20px;border-bottom:1px solid var(--line)}
+.dh h3{font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+.dh .x{position:static}
+.db{flex:1;overflow-y:auto;overscroll-behavior:contain;padding:0 20px 28px}
+.ci{display:grid;grid-template-columns:72px minmax(0,1fr) auto;gap:14px;align-items:start;padding-block:16px;border-bottom:1px solid var(--line)}
+.th{position:relative;aspect-ratio:4/5;background:var(--soft)}
+.th svg{position:absolute;inset:0;width:100%;height:100%}
+.ci h4{font-size:14px;font-weight:600}
+.sm{font-size:13px;color:var(--t7)}
+.qty{display:inline-flex;align-items:center;margin-top:10px;box-shadow:inset 0 0 0 1px var(--line)}
+.qty button{width:34px;height:34px;font-size:16px}
+.qty span{min-width:24px;text-align:center;font-size:13px}
+.cr{display:flex;flex-direction:column;align-items:flex-end;gap:2px;font-weight:600}
+.del{margin-top:10px;font-size:12px;font-weight:400;color:var(--t5);text-decoration:underline}
+.emp{display:grid;justify-items:center;gap:14px;padding-block:72px;text-align:center}
+.emp b{font-size:18px;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+.tot{display:grid;gap:4px;padding-block:16px;margin-bottom:18px;border-bottom:1px solid var(--line)}
+.tot div{display:flex;justify-content:space-between;color:var(--t7)}
+.tot .sum{color:var(--t);font-size:18px;font-weight:700;padding-top:8px}
+.of h4{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin:4px 0 12px}
+.fl{display:grid;gap:6px;margin-bottom:12px}
+.fl span{font-size:13px;font-weight:500}
+.fl input{width:100%;height:48px;padding:0 14px;border:0;border-radius:0;box-shadow:inset 0 0 0 1px var(--line);font:inherit;font-size:16px;color:var(--t);background:#fff;-webkit-appearance:none;appearance:none}
+.fl input:focus{outline:none;box-shadow:inset 0 0 0 1px var(--t)}
+.pay{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:18px}
+.pay label{display:flex;align-items:center;gap:8px;min-height:48px;padding:0 12px;box-shadow:inset 0 0 0 1px var(--line);font-size:13px;cursor:pointer}
+.pay label:has(:checked){box-shadow:inset 0 0 0 1px var(--t)}
+.pay input{accent-color:var(--t)}
+.note{margin-top:12px;font-size:12px;color:var(--t5)}
+.ok{padding-block:32px}
+.ok h4{font-size:24px;font-weight:800;text-transform:uppercase;margin:6px 0 12px}
+.ok>p{color:var(--t7)}
+.rc{margin:18px 0;border-top:1px solid var(--line)}
+.rc p{display:flex;justify-content:space-between;gap:12px;padding-block:10px;border-bottom:1px solid var(--line)}
+.rc span:first-child{color:var(--t7)}
+.rc span:last-child{text-align:right;font-weight:500;overflow-wrap:anywhere}
+.toast{position:fixed;left:50%;bottom:24px;z-index:200;max-width:calc(100% - 32px);padding:14px 20px;background:var(--d);color:#fff;font-size:13px;font-weight:500;transform:translate(-50%,calc(100% + 60px));visibility:hidden;transition:visibility .3s,transform .35s var(--e)}
+.toast.on{transform:translate(-50%,0);visibility:visible}
+@media (max-width:719px){.nav a:not(:first-child){display:none}.right a{display:none}.logo{font-size:24px}.hcap{bottom:40px}.credit{top:10px;bottom:auto}}
+@media (min-width:720px){.g{padding-left:max(45px,env(safe-area-inset-left,0px));padding-right:max(45px,env(safe-area-inset-right,0px))}.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:56px 24px}.mb{grid-template-columns:1.1fr 1fr}.mb>.ph{position:sticky;top:0;align-self:start}.md{padding:44px 36px}.sec{padding-block:96px}}
+@media (min-width:1200px){.hdr .in{height:91px}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><filter id="blur" x="-30%" y="-300%" width="160%" height="700%"><feGaussianBlur stdDeviation="5"/></filter><filter id="worn"><feTurbulence type="fractalNoise" baseFrequency="1.5" numOctaves="2" seed="7"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1.1 1.5"/><feComposite in="SourceGraphic" operator="in"/></filter></defs></svg>
+
+<div class="pv">Макет сайту для погодження · замовлення не приймаються</div>
+<header class="hdr" id="hdr"><div class="in g">
+<nav class="nav" aria-label="Розділи"><a href="#shop">Колекція</a><a href="#drop">Наступний дроп</a><a href="#about">Про нас</a></nav>
+<a href="#top" class="logo" aria-label="LE1337ET — на головну">LE1337ET</a>
+<div class="right"><a href="https://instagram.com/ss1337ss" target="_blank" rel="noopener">Instagram</a><button class="cbtn" id="cartBtn" aria-label="Відкрити кошик"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 8h14l-1.2 12.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8Z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg><b id="cnt">0</b></button></div>
+</div></header>
+
+<main id="top">
+<section class="hero" aria-label="Summer Collection">
+<img src="img/hero.jpg" alt="Хлопець біля білого бусика вночі, знято зі спалахом" fetchpriority="high">
+<div class="hcap">
+<small>it’s not clothes, it’s style</small>
+<h1>Summer collection</h1>
+<p>Майки, реглани, футболки та худі SVARS</p>
+<a href="#shop" class="btn lt">Дивитись колекцію</a>
+</div>
+<span class="credit">Фото: <a href="https://unsplash.com/photos/8QVGnc2yDdw" target="_blank" rel="noopener">Wildan Ramdani Akbar / Unsplash</a></span>
+</section>
+
+<section class="sec g" id="shop"><div class="wrap">
+<div class="sh"><h2>Summer collection</h2><div class="tabs" id="tabs" role="group" aria-label="Тип одягу"></div></div>
+<div class="grid" id="grid"></div>
+<div class="more"><a class="btn" href="https://instagram.com/ss1337ss" target="_blank" rel="noopener">Замовити в Instagram &gt;&gt;&gt;</a></div>
+</div></section>
+
+<section class="lb2" id="drop">
+<img src="img/hero.jpg" alt="" loading="lazy">
+<div class="in g">
+<h2>13<span>3</span>7</h2>
+<p>Наступний дроп уже готується. Залиш нік в Instagram — напишемо першим.</p>
+<form class="wf" id="wf"><label for="w-ig" style="position:absolute;left:-9999px">Нік в Instagram</label><input id="w-ig" name="ig" placeholder="@твій.нік" required><button class="btn lt" type="submit">Хочу першим</button></form>
+</div>
+</section>
+
+<section class="about g" id="about"><div class="wrap">
+<h2>LE1337ET</h2>
+<p>Це не просто одяг, це стиль. Нічні фото зі спалахом, машини, друзі і речі SVARS, які носять так само, як живуть: без правил. Дропи виходять невеликими партіями і не повторюються.</p>
+<div class="leet" aria-label="1 — L, 3 — E, 3 — E, 7 — T"><div><b>1</b><span>L</span></div><div><b>3</b><span>E</span></div><div><b>3</b><span>E</span></div><div><b>7</b><span>T</span></div></div>
+<div class="facts">
+<div><b>Доставка</b><span>Нова Пошта, 1–2 дні</span></div>
+<div><b>Обмін</b><span>14 днів</span></div>
+<div><b>Замовлення</b><span>На сайті або в Instagram</span></div>
+</div>
+</div></section>
+</main>
+
+<footer class="ft g"><div class="in">
+<b>LE1337ET</b>
+<nav aria-label="Футер"><a href="https://instagram.com/ss1337ss" target="_blank" rel="noopener">Instagram</a><a href="#shop">Колекція</a><a href="#drop">Наступний дроп</a></nav>
+<span>Макет сайту · дизайн і розробка — Ivan</span>
+</div></footer>
+
+<div class="ov" id="ov"></div>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Товар"><div class="mp"><button class="x" data-close aria-label="Закрити">×</button><div class="mb" id="mb"></div></div></div>
+<aside class="dr" id="dr" aria-label="Кошик">
+<div class="dh"><h3>Кошик (<span id="dc">0</span>)</h3><button class="x" data-close aria-label="Закрити">×</button></div>
+<div class="db">
+<div id="cv">
+<div id="items"></div>
+<div class="tot" id="tot"></div>
+<form class="of" id="of">
+<h4>Доставка Новою Поштою</h4>
+<label class="fl"><span>Ім’я та прізвище</span><input id="f-name" name="name" type="text" required autocomplete="name"></label>
+<label class="fl"><span>Телефон</span><input id="f-phone" name="phone" type="tel" required autocomplete="tel" placeholder="+380" pattern="\+?[0-9 ]{10,16}" title="Наприклад: +380 67 123 45 67"></label>
+<label class="fl"><span>Instagram (необов’язково)</span><input id="f-ig" name="ig" type="text" placeholder="@нік"></label>
+<label class="fl"><span>Місто</span><input id="f-city" name="city" type="text" required list="cities"></label>
+<label class="fl"><span>Відділення або поштомат №</span><input id="f-np" name="np" type="text" required inputmode="numeric"></label>
+<h4>Оплата</h4>
+<div class="pay"><label><input id="f-card" type="radio" name="pay" value="card" checked>Карткою онлайн</label><label><input id="f-cod" type="radio" name="pay" value="cod">Накладений платіж</label></div>
+<button class="btn full" type="submit">Оформити замовлення</button>
+<p class="note">Це макет: дані з форми нікуди не надсилаються.</p>
+</form>
+</div>
+<div id="okv" hidden></div>
+</div>
+</aside>
+<datalist id="cities"><option value="Київ"><option value="Львів"><option value="Харків"><option value="Одеса"><option value="Дніпро"><option value="Вінниця"><option value="Запоріжжя"><option value="Івано-Франківськ"></datalist>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const SH={
+te:'M78 16Q100 28 122 16L160 26L194 70L166 92L152 76L154 204H46L48 76L34 92L6 70L40 26Z',
+tk:'M68 12Q100 46 132 12L142 16Q138 52 158 70L158 206H42L42 70Q62 52 58 16Z',
+ls:'M80 16Q100 28 120 16L154 26Q174 36 180 80L194 190L172 194L156 98L154 206H46L44 98L28 194L6 190L20 80Q26 36 46 26Z',
+hd:'M74 24Q100 36 126 24L156 32Q178 42 184 84L194 178L170 182L154 98V204H46V98L30 182L6 178L16 84Q22 42 44 32Z'};
+const SLV={L:'M80 16L46 26Q26 36 20 80L6 190L28 194L44 98L46 74Q66 44 80 16Z',R:'M120 16L154 26Q174 36 180 80L194 190L172 194L156 98L154 74Q134 44 120 16Z'};
+const P=[
+{id:1,n:'SVARS Tank — чорна',t:'tk',c:'k',pr:790,v:'svars',nw:1,d:'Майка з металевим логотипом SVARS на грудях. Вільний крій, щільна бавовна.'},
+{id:2,n:'СВОРС Raglan — рожевий',t:'rg',c:'w',pr:1290,v:'angel',nw:1,d:'Білий реглан з рожевими рукавами, ангел і коло із зірок. Напис на рукаві.'},
+{id:3,n:'SVOARS 1337 Tee — чорна',t:'te',c:'k',pr:990,v:'svoars',d:'Каліграфічний SVOARS і 1337 на грудях. Класика бренду.'},
+{id:4,n:'SVARS Hoodie — чорне',t:'hd',c:'k',pr:1890,v:'svars',d:'Металевий логотип SVARS на худі з начосом.'},
+{id:5,n:'1337 Tee — біла',t:'te',c:'w',pr:990,v:'leet',d:'Великі цифри 1337 і підпис it’s not clothes, it’s style.'},
+{id:6,n:'Pink Logo Longsleeve — білий',t:'ls',c:'w',pr:1190,v:'pinklogo',d:'Рожевий логотип LE1337ET на грудях і напис уздовж рукава.'}];
+const TY={tk:'Майка',rg:'Реглан',te:'Футболка',hd:'Худі',ls:'Лонгслів'},SZ=['S','M','L','XL'];
+const CH={tk:[['Ширина',54,57,60,63],['Довжина',70,72,74,76]],rg:[['Ширина',56,59,62,65],['Довжина',70,72,74,76],['Рукав',60,61,62,63]],te:[['Ширина',56,59,62,65],['Довжина',72,74,76,78],['Рукав',22,23,24,25]],hd:[['Ширина',62,65,68,71],['Довжина',70,72,74,76],['Рукав',60,61,62,63]],ls:[['Ширина',56,59,62,65],['Довжина',70,72,74,76],['Рукав',62,63,64,65]]};
+const TABS=[['all','Усе'],['tk','Майки'],['te','Футболки'],['rg','Реглани'],['ls','Лонгсліви'],['hd','Худі']];
+let tab="all",cart=[],cur=null,mS=null,tt,uid=0;
+const byId=id=>P.find(p=>p.id===id),fmt=n=>n.toLocaleString('uk-UA')+' ₴';
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const PK='#e5679a';
+function print(p,ink){
+if(p.v==='svars')return `<text y="0" font-family="'Metal Mania',serif" font-size="30" text-anchor="middle" letter-spacing="1">SVARS</text><path d="M-38 6H38M-30 10H30" style="stroke:${ink}" stroke-width=".8"/><text y="20" font-family="Montserrat,sans-serif" font-weight="700" font-size="4.4" letter-spacing="2.6" text-anchor="middle">LE1337ET · 1337</text>`;
+if(p.v==='svoars')return `<text y="-4" font-family="'Metal Mania',serif" font-size="24" text-anchor="middle" transform="rotate(-8)">Svoars</text><text y="16" font-family="Montserrat,sans-serif" font-weight="800" font-size="10" letter-spacing="3" text-anchor="middle">1337</text>`;
+if(p.v==='angel'){let st='';for(let k=0;k<10;k++){const a=k/10*Math.PI*2;st+=`<path transform="translate(${(Math.cos(a)*30).toFixed(1)} ${(Math.sin(a)*26-6).toFixed(1)}) scale(.9)" d="M0 -3L.9 -.9L3 -.9L1.3 .4L1.9 2.6L0 1.3L-1.9 2.6L-1.3 .4L-3 -.9L-.9 -.9Z" fill="${PK}"/>`}
+return st+`<path d="M0 -16C-6 -24 -22 -26 -28 -18C-20 -18 -12 -12 -6 -8C-14 -8 -22 -4 -24 2C-14 -2 -6 -2 0 -2C6 -2 14 -2 24 2C22 -4 14 -8 6 -8C12 -12 20 -18 28 -18C22 -26 6 -24 0 -16Z" fill="${PK}"/><circle cy="-14" r="3" fill="${PK}"/><text y="14" font-family="Montserrat,sans-serif" font-weight="800" font-size="11" letter-spacing="2" text-anchor="middle" fill="${PK}">СВОРС</text>`}
+if(p.v==='leet')return `<text y="4" font-family="'Rubik Distressed',sans-serif" font-size="34" text-anchor="middle">1337</text><text y="16" font-family="Montserrat,sans-serif" font-weight="700" font-size="4.6" letter-spacing="1.4" text-anchor="middle">IT’S NOT CLOTHES, IT’S STYLE</text>`;
+return `<text x="-20" y="-28" font-family="'Rubik Distressed',sans-serif" font-size="11" text-anchor="middle" fill="${PK}">LE1337ET</text>`;
+}
+function art(p,cls=''){
+const b=p.c==='k',f=b?'#18171a':'#f7f6f3',s=b?'#18171a':'#d6d2ca',l=b?'#38363b':'#dedad2',ink=b?'#f1f0ed':'#18171a';
+const L=d=>`<path d="${d}" fill="none" style="stroke:${l}" stroke-width="1.2" stroke-linecap="round"/>`;
+const path=p.t==='rg'?SH.ls:SH[p.t];
+let o=`<ellipse cx="100" cy="218" rx="78" ry="6" style="fill:var(--sh)" filter="url(#blur)"/><path d="${path}" style="fill:${f};stroke:${s}" stroke-width="1" stroke-linejoin="round"/>`;
+if(p.t==='rg')o+=`<path d="${SLV.L}" fill="${PK}"/><path d="${SLV.R}" fill="${PK}"/>`;
+if(p.t==='hd')o+=L('M46 190H154M7 166L32 170M193 166L168 170')+`<path d="M66 34C64 8 136 8 134 34C128 60 112 68 100 68C88 68 72 60 66 34Z" style="fill:${f};stroke:${l}" stroke-width="1.2"/>`;
+else if(p.t==='tk')o+=L('M72 16Q100 50 128 16');
+else o+=L('M84 22Q100 32 116 22');
+if(p.t==='rg'||p.t==='ls')o+=`<text transform="translate(172 96) rotate(80)" font-family="'Rubik Distressed',sans-serif" font-size="10" fill="${p.t==='rg'?'#fff':PK}">LE1337ET</text>`;
+o+=`<g transform="translate(100 ${p.t==='hd'?128:p.t==='tk'?112:110})" style="fill:${ink}" filter="url(#worn)">${print(p,ink)}</g>`;
+return `<svg class="${cls}" viewBox="-24 -30 248 310" role="img" aria-label="${p.n}">${o}</svg>`;
+}
+const card=p=>`<button class="card" data-open="${p.id}"><span class="ph">${art(p)}${p.nw?'<span class="new">New</span>':''}</span><span class="meta"><span class="nm">${p.n}</span><span class="pc">${fmt(p.pr)}</span></span></button>`;
+const chart=t=>`<table class="chart"><thead><tr><th>см</th>${SZ.map(s=>`<th>${s}</th>`).join('')}</tr></thead><tbody>${CH[t].map(r=>`<tr>${r.map(c=>`<td>${c}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
+$('#tabs').innerHTML=TABS.map(([v,n])=>`<button class="chip${v==='all'?' on':''}" data-v="${v}" aria-pressed="${v==='all'}">${n}</button>`).join('');
+function render(){$('#grid').innerHTML=P.filter(p=>tab==='all'||p.t===tab).map(card).join('')}
+const tot=()=>cart.reduce((a,i)=>{a.n+=i.q;a.s+=byId(i.id).pr*i.q;return a},{n:0,s:0});
+function upd(){
+const t=tot();
+$('#cnt').textContent=t.n;$('#dc').textContent=t.n;$('#cartBtn').classList.toggle('has',t.n>0);
+$('#items').innerHTML=cart.length?cart.map((i,x)=>{const p=byId(i.id);return `<div class="ci"><div class="th">${art(p)}</div><div><h4>${p.n}</h4><p class="sm">${TY[p.t]} · ${i.size}</p><div class="qty"><button data-q="-1" data-i="${x}" aria-label="Менше">−</button><span>${i.q}</span><button data-q="1" data-i="${x}" aria-label="Більше">+</button></div></div><div class="cr">${fmt(p.pr*i.q)}<button class="del" data-d="${x}">Видалити</button></div></div>`}).join(''):'<div class="emp"><b>Кошик порожній</b><p class="sm">Обери щось із Summer collection</p><button class="btn ol" data-go>До колекції</button></div>';
+$('#tot').innerHTML=`<div><span>Доставка</span><span>за тарифами НП</span></div><div class="sum"><span>Разом</span><span>${fmt(t.s)}</span></div>`;
+$('#tot').hidden=$('#of').hidden=!cart.length;
+}
+function toast(m){const e=$('#toast');e.textContent=m;e.classList.add('on');clearTimeout(tt);tt=setTimeout(()=>e.classList.remove('on'),2600)}
+function add(id,s){const it=cart.find(i=>i.id===id&&i.size===s);it?it.q++:cart.push({id,size:s,q:1});upd();toast(`Додано в кошик, розмір ${s}`)}
+function closeAll(){$$('.modal,.dr,.ov').forEach(x=>x.classList.remove('on'));document.body.classList.remove('lock')}
+function openL(el){closeAll();el.classList.add('on');$('#ov').classList.add('on');document.body.classList.add('lock');el.querySelector('.x').focus({preventScroll:true})}
+function openCart(){$('#cv').hidden=false;$('#okv').hidden=true;openL($('#dr'))}
+function openM(id){
+const p=cur=byId(id);mS=null;
+$('#mb').innerHTML=`<div class="ph">${art(p)}</div><div class="md"><p class="sm">${TY[p.t]} · Summer collection</p><h3>${p.n}</h3><p class="mpr">${fmt(p.pr)}</p><p class="ds">${p.d}</p><div><p class="lb">Розмір</p><div class="sz">${SZ.map(s=>`<button data-s="${s}">${s}</button>`).join('')}</div><p class="err" id="merr"></p></div><button class="btn full" id="madd">Додати в кошик</button><p class="dmline">або напиши нам в <a href="https://instagram.com/ss1337ss" target="_blank" rel="noopener">Instagram @ss1337ss</a></p><div><details><summary>Таблиця розмірів, см</summary><div>${chart(p.t)}</div></details><details><summary>Склад і догляд</summary><p>${p.t==='hd'?'Тринитка з начосом, 340 г/м²':'100% бавовна, 220 г/м²'}. Оверсайз-крій. Прання при 30°, навиворіт.</p></details><details><summary>Доставка і обмін</summary><p>Нова Пошта по Україні, 1–2 дні. Обмін протягом 14 днів.</p></details></div></div>`;
+$('#modal .mp').scrollTop=0;openL($('#modal'));
+}
+$('#tabs').addEventListener('click',e=>{const b=e.target.closest('.chip');if(!b)return;tab=b.dataset.v;$$('.chip').forEach(x=>{x.classList.toggle('on',x===b);x.setAttribute('aria-pressed',x===b)});render()});
+$('#grid').addEventListener('click',e=>{const o=e.target.closest('[data-open]');if(o)openM(+o.dataset.open)});
+$('#mb').addEventListener('click',e=>{
+const s=e.target.closest('[data-s]');
+if(s){mS=s.dataset.s;$$('#mb [data-s]').forEach(b=>b.classList.toggle('on',b===s));$('#merr').textContent='';$('#madd').textContent='Додати в кошик · '+mS;return}
+if(e.target.closest('#madd')){if(!mS){$('#merr').textContent='Обери розмір';return}add(cur.id,mS);closeAll()}
+});
+$('#cartBtn').addEventListener('click',openCart);
+$('#dr').addEventListener('click',e=>{
+const b=e.target.closest('button');if(!b)return;const d=b.dataset;
+if(d.q){const i=cart[+d.i];i.q+=+d.q;if(i.q<1)cart.splice(+d.i,1);upd()}
+else if(d.d!==undefined){cart.splice(+d.d,1);upd()}
+else if('go' in d||'done' in d){closeAll();$('#shop').scrollIntoView({behavior:'smooth'})}
+});
+$('#of').addEventListener('submit',e=>{
+e.preventDefault();if(!cart.length)return;
+const f=new FormData(e.target),t=tot(),c=f.get('pay')==='card',no='LE-'+(Math.floor(Math.random()*9e4)+1e4);
+$('#okv').innerHTML=`<div class="ok"><p class="sm">Замовлення ${no}</p><h4>Дякуємо!</h4><p>${c?'Посилання на оплату надішлемо в SMS.':'Оплата при отриманні у відділенні.'} Напишемо в Instagram або зателефонуємо, щоб підтвердити.</p><div class="rc"><p><span>Ім’я</span><span>${esc(f.get('name'))}</span></p><p><span>Телефон</span><span>${esc(f.get('phone'))}</span></p><p><span>Нова Пошта</span><span>${esc(f.get('city'))}, №${esc(f.get('np'))}</span></p><p><span>Оплата</span><span>${c?'Карткою онлайн':'Накладений платіж'}</span></p><p><span>Разом, ${t.n} шт</span><span>${fmt(t.s)}</span></p></div><button class="btn full" data-done>Продовжити</button></div>`;
+cart=[];upd();e.target.reset();$('#cv').hidden=true;$('#okv').hidden=false;$('.db').scrollTop=0;
+});
+$('#wf').addEventListener('submit',e=>{e.preventDefault();const v=e.target.ig.value.trim();e.target.reset();toast(`Готово! Напишемо ${v.startsWith('@')?v:'@'+v}, щойно вийде новий дроп`)});
+document.addEventListener('click',e=>{if(e.target.closest('[data-close]')||e.target.id==='modal'||e.target.id==='ov')closeAll()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeAll()});
+addEventListener('scroll',()=>$('#hdr').classList.toggle('sc',scrollY>4),{passive:true});
+render();upd();Promise.all(['30px "Metal Mania"','30px "Rubik Distressed"'].map(f=>document.fonts.load(f))).then(()=>{uid=0;render()});
+</script>
+</body>
+</html>
